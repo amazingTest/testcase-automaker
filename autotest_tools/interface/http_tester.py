@@ -1,6 +1,6 @@
 import sys
 sys.path.append("../..")
-from src.autotest_tools.interface.http_params_generator import http_params_generator
+from autotest_tools.interface.http_params_generator import http_params_generator
 from Utils import httptools
 from ptest.plogger import preporter
 import requests

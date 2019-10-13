@@ -1,15 +1,14 @@
 # testcase-automaker
-测试用例自动生成器
 
 testcase-automaker can be used to create interface testcase with different params combo base on pairwise strategy.
 
 installation
 
-    pip install allpairspy
+    pip install testcase-automaker
     
 best practice
 
-    from src.autotest_tools.interface.http_params_generator import http_params_generator
+    from testcase-automaker.autotest_tools.interface.http_params_generator import http_params_generator
 
     params_structure = {
                 'name': {
@@ -86,4 +85,4 @@ which is a list that contains the params combo base on pairwise and the given pa
 
 Contact me
 
-523314409@qq.com
+For information and suggestions you can contact me at 523314409@qq.com
