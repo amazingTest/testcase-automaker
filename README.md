@@ -1,6 +1,6 @@
 # testcase-automaker
 
-[testcase-automaker 中文文档](https://github.com/amazingTest/testcase-automaker/blob/master/README_CN.md)
++ [testcase-automaker 中文文档](https://github.com/amazingTest/testcase-automaker/blob/master/README_CN.md)
 
 testcase-automaker can be used to create interface testcase with different params combo base on pairwise strategy.
 
