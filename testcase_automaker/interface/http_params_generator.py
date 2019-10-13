@@ -1,6 +1,6 @@
 import sys
 sys.path.append("../..")
-from Utils.amazingutils import randoms
+from testcase_automaker.Utils.amazingutils import randoms
 from allpairspy import AllPairs
 import random
 import copy

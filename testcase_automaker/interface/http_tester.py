@@ -1,7 +1,7 @@
 import sys
 sys.path.append("../..")
 from testcase_automaker.interface.http_params_generator import http_params_generator
-from Utils import httptools
+from testcase_automaker.Utils import httptools
 from ptest.plogger import preporter
 import requests
 import copy
@@ -75,18 +75,20 @@ class http_tester(object):
         if self.method.lower() == 'get':
             for url in self.url_list_for_method_get:
                 preporter.info('\n\n正在请求: ' + url + '\n\n')
-                self.returned_data.append(httptools.request(url=url, method=self.method, session=self.session, headers=self.headers,
-                                                            assertion=assertion))
+                self.returned_data.append(
+                    httptools.request(url=url, method=self.method, session=self.session, headers=self.headers,
+                                      assertion=assertion))
         else:
             if len(self.pre_send_params_list) > 0:
                 for pre_send_params in self.pre_send_params_list:
                     preporter.info('\n\n正在请求: ' + self.url + '\n\n' + '当前请求参数: ' + str(pre_send_params) + '\n\n')
-                    self.returned_data.append(httptools.request(url=self.url, method=self.method, json_data=pre_send_params,
-                                      session=self.session, headers=self.headers, assertion=assertion))
+                    self.returned_data.append(
+                        httptools.request(url=self.url, method=self.method, json_data=pre_send_params,
+                                          session=self.session, headers=self.headers, assertion=assertion))
             else:
                 preporter.info('\n\n正在请求: ' + self.url + '\n\n')
                 self.returned_data.append(httptools.request(url=self.url, method=self.method,
-                                         session=self.session, headers=self.headers, assertion=assertion))
+                                                            session=self.session, headers=self.headers, assertion=assertion))
 
 
 if __name__ == '__main__':
