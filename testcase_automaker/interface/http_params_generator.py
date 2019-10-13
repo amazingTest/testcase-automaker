@@ -64,9 +64,6 @@ class http_params_generator(object):
             prepared_params_list_false = http_params_generator.get_value_dic(raw_params_list_false)
             params_combo_list.append(prepared_params_list_true)
             params_combo_list.append(prepared_params_list_false)
-        # params_combo_set = [el.replace("'", "\"") for el in set(map(str, params_combo_list))]
-        # print(params_combo_set)
-        # params_combo_set = list(map(json.loads, params_combo_set))
         self.generated_params_list = params_combo_list
 
     # 生成参数

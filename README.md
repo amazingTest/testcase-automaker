@@ -2,13 +2,13 @@
 
 testcase-automaker can be used to create interface testcase with different params combo base on pairwise strategy.
 
-installation
+## Installation
 
     pip install testcase-automaker
     
-best practice
+## Best practice
 
-    from testcase-automaker.autotest_tools.interface.http_params_generator import http_params_generator
+    from testcase_automaker.interface.http_params_generator import http_params_generator
 
     params_structure = {
                 'name': {
@@ -83,6 +83,6 @@ run the script then u may get output like this:
 
 which is a list that contains the params combo base on pairwise and the given params structure
 
-Contact me
+## Contact me
 
 For information and suggestions you can contact me at 523314409@qq.com
