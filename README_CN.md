@@ -4,6 +4,7 @@
 
 ## 安装
 
+    pip install allpairspy
     pip install testcase-automaker
     
 ## 最佳实践

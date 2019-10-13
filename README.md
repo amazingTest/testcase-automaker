@@ -5,7 +5,8 @@
 testcase-automaker can be used to create interface testcase with different params combo base on pairwise strategy.
 
 ## Installation
-
+    
+    pip install allpairspy
     pip install testcase-automaker
     
 ## Best practice
